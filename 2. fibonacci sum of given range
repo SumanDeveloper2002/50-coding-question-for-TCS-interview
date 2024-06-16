@@ -1,0 +1,22 @@
+//              TCS NQT 2024, 29-2nd shift
+//             ------------------------------
+
+
+#include <stdio.h>
+int main()
+{
+    int a=0,b=1,n,c;
+    int fibsum=1;
+    scanf("%d",&n);
+    printf("%d %d ",a,b);
+    for(int i=3;i<=n;i++)
+    {
+      c=a+b;
+      printf("%d ",c);
+      fibsum+=c;
+      a=b;
+      b=c;
+    }
+    printf("\nfibonacci sum =%d",fibsum);
+    return 0;
+}
